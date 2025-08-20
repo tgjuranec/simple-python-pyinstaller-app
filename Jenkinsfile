@@ -32,7 +32,7 @@ pipeline {
         stage('Deploy') {
             agent {
                 docker {
-                    image 'python:2-alpine'
+                    image 'minidocks/pyinstaller:latest'
                 }
             }
             steps {
